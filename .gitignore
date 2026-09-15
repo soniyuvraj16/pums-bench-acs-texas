@@ -1,0 +1,28 @@
+# Raw Census microdata (~580 MB) - download per README, do not commit
+csv_ptx/
+csv_htx/
+csv_ptx (2023)/
+csv_htx (2023)/
+*.zip
+
+# Derived parquet cache - rebuilt by `python -m pums.build_cache`
+cache/
+
+# Competition inputs come from Kaggle; not redistributed here
+questions.csv
+sample_submission.csv
+
+# Reference PDFs (public Census documents, fetched per README)
+*.pdf
+
+# Credentials - never commit
+kaggle.json
+access_token
+.kaggle/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
